@@ -1,6 +1,8 @@
-
 const continueGame = () => {
   const alphabet = getRandomAlphabet();
+  const currentAlphabet = document.getElementById("current-alphabet");
+  currentAlphabet.innerText = alphabet;
+  setBackgroundColorById(alphabet);
 };
 
 const playNow = () => {
@@ -13,4 +15,3 @@ const playNow = () => {
   showElementById("play-ground");
   continueGame();
 };
-

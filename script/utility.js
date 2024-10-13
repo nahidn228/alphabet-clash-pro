@@ -7,6 +7,11 @@ const showElementById = (elementId) => {
   element.classList.remove("hidden");
 };
 
+const setBackgroundColorById = (elementId) => {
+  const element = document.getElementById(elementId);
+  element.classList.add("bg-orange-400");
+};
+
 function getRandomAlphabet() {
   const alphabetString = "abcdefghijklmnopqrstuvwxyz";
   const alphabets = alphabetString.split("");
