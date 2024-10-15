@@ -91,16 +91,20 @@
           <!-- Key Board End-->
           <!-- Life Score -->
           <div class="flex justify-between w-3/4 mb-10">
+            <!-- Display Life -->
             <button
               class="btn rounded-full bg-[#894189] border-0 text-white text-sm px-5"
             >
-              Life <img src="./images/Group 23.svg" alt="" /> <span>1</span>
+              Life <img src="./images/Group 23.svg" alt="" />
+              <span id="current-life">5</span>
             </button>
+            <!-- Display score -->
             <button
               class="btn rounded-full bg-[#360490] border-0 text-white text-sm px-5"
             >
               Score
-              <img src="./images/doler.svg" alt="" /> <span>1</span>
+              <img src="./images/doler.svg" alt="" />
+              <span id="current-score">0</span>
             </button>
           </div>
         </div>
@@ -108,16 +112,20 @@
       <!-- Play Ground End -->
       <!-- final score start -->
       <section
-        id="score"
+        id="final-score"
         class="hidden flex items-center justify-center min-h-screen"
       >
         <div
           class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-xl"
         >
+          <h3 class="text-3xl font-bold">Game Over !</h3>
+
           <h1 class="text-6xl font-extrabold">
-            <span class="">Score :</span> <span>14</span>
+            <span class="">Score :</span> <span id="last-score">14</span>
           </h1>
-          <button class="btn bg-white text-black">Play Again</button>
+          <button onclick="playNow()" class="btn bg-white text-black">
+            Play Again
+          </button>
           <p>Practice will make you Pro</p>
         </div>
       </section>
